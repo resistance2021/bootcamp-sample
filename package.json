@@ -1,0 +1,35 @@
+{
+  "name": "bootcamp-sample",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto con Node.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor src/ index.html 1234 --reload",
+    "lint": "oxlint src/",
+    "format": "oxfmt src/",
+    "build": "echo 'No build step defined'",
+    "deploy": "echo 'No deploy step defined'"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "html",
+    "css"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.11.2",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.11.2",
+  "type": "module",
+  "devDependencies": {
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0",
+    "servor": "^4.0.2"
+  }
+}
